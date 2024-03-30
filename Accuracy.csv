@@ -1,0 +1,5 @@
+model,accurary
+cnn,0.5542
+mobilenet,0.9783
+vgg,0.917
+alexnet,0.936

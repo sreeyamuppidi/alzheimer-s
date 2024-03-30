@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    /* Style the container */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h2{
+        text-align: center;
+    }
+    /* Style the content */
+    .content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style the about section */
+    #about {
+        padding: 60px 0;
+    }
+
+    /* Style the image */
+    #about img {
+        width: 200px;
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+        border: 5px solid #3498db;
+        border-radius: 10px;
+    }
+
+    /* Style the h2 in the about section */
+    #about h2 {
+        color: #333;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+.image-cell{
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-left:40%;
+}
+#about a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+Style for the table in the precautions section
+
+#precautions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#precautions th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+#precautions td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#precautions tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#precautions tr:hover {
+    background-color: #e2e2e2;
+}
+
+#precautions tr:first-child:hover {
+    background-color: #3498db;
+}
+
+#precautions tr:first-child:hover td {
+
+    color: #fff;
+}
+
+#precautions tr:first-child:hover th {
+    color: #fff;
+}
+
+
+#precautions table {
+    margin: 0 auto;
+    border: #333;
+}
+
+/* Style the h2 in the precautions section */
+#precautions h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.ic{
+    align-items: center;
+    margin-left: 80px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <section id="about" style="background-color: #F0F0F0; padding: 60px 30%; ">
+                <table>
+                    <tr>
+                        <td class="image-cell">
+                            <img src="{{url_for('send_image', filename=image_name)}}">
+                        </td>
+                        <td><br><br></td>
+                        <td class="text-cell">
+                            <h2>{{ text }}</h2>
+                            <a href="upload" >Predict Another Image</a>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="precautions">
+                <h2>Precautions for Different Dementia Classes</h2>
+                <table>
+                    <tr>
+                        <th>Class</th>
+                        <th>Precautions</th>
+                    </tr>
+                    <tr>
+                        <td>Demented</td>
+                        <td>1. Consult a healthcare professional for proper diagnosis and treatment.<br>2. Ensure a safe and supportive environment for the individual.<br>3. Monitor and manage their daily activities.</td>
+                    </tr>
+                    <tr>
+                        <td>Mild Demented</td>
+                        <td>1. Consult a specialist for early intervention.<br>2. Provide cognitive stimulation and engage in memory-enhancing activities.<br>3. Ensure a structured daily routine.</td>
+                    </tr>
+                    <tr>
+                        <td>Moderate Demented</td>
+                        <td>1. Seek professional medical care and treatment.<br>2. Ensure a secure and supervised living arrangement.<br>3. Focus on comfort and quality of life.</td>
+                    </tr>
+                    <tr>
+                        <td>Very Mild Demented</td>
+                        <td>1. Consult a healthcare provider for cognitive assessment.<br>2. Encourage mental and social engagement.<br>3. Monitor and adapt as the condition progresses.</td>
+                    </tr>
+                </table>
+            </section>
+            
+        </div>
+    </div>
+</body>
+</html>

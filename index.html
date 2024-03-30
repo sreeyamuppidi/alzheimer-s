@@ -1,0 +1,309 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+        <title>Alzheimer's disease Classification</title>
+
+        <!--
+
+        Breezed Template
+
+        https://templatemo.com/tm-543-breezed
+
+        -->
+        <!-- Additional CSS Files -->
+        <link rel="stylesheet" type="text/css" href="static/assets/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="static/assets/css/font-awesome.css">
+
+        <link rel="stylesheet" href="static/assets/css/templatemo-breezed.css">
+
+        <link rel="stylesheet" href="static/assets/css/owl-carousel.css">
+
+        <link rel="stylesheet" href="static/assets/css/lightbox.css">
+        <style>
+        .section {
+            background-color: #f7f7f7; /* Background color for the section */
+            padding: 40px 0;
+        }
+
+        .section-title h2 {
+            font-size: 24px; /* Title font size */
+            color: #333; /* Title text color */
+            text-align: center; /* Center align the title */
+        }
+
+        .container {
+            max-width: 1200px; /* Set a max width for content */
+            margin: 0 auto; /* Center the content horizontally */
+        }
+
+        .sbmt {
+            margin-left: 25%;
+            border: #333 1.5px solid; /* Add a 1px border around the form */
+            width: 50%;
+            height: max-content;
+            align-content: center;
+        }
+
+        #contact {
+            background-color: #fff; /* Form background color */
+            padding: 20px;
+            border-radius: 5px; /* Rounded corners for the form */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+        select {
+            width: 100%; /* Make the select input full width */
+            padding: 10px;
+            border: 1px solid #ccc; /* Border for the select input */
+            border-radius: 5px; /* Rounded corners for the select input */
+        }
+
+        #form-submit {
+            background-color: #007BFF; /* Button background color */
+            color: #fff; /* Button text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px; /* Rounded corners for the button */
+            cursor: pointer;
+        }
+
+        #form-submit:hover {
+            background-color: #0056b3; /* Button background color on hover */
+        }
+
+        /* Add this CSS in your stylesheet or inside a <style> tag in your HTML document */
+        .footer-area {
+            background-color: #fff; /* Change to your desired background color */
+            padding: 20px; /* Adjust the padding as needed */
+            text-align: center;
+        }
+
+        .footer-area p {
+            font-size: 16px; /* Change to your desired font size for paragraph text */
+        }
+
+        .footer-area .social-icons {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-area .social-icons li {
+            display: inline-block;
+            margin-right: 10px; /* Adjust the spacing between social icons */
+        }
+
+        .footer-area .social-icons a {
+            font-size: 20px; /* Change to your desired icon size */
+            text-decoration: none;
+        }
+
+        /* Example: Change the color of social icons on hover */
+        .footer-area .social-icons a:hover {
+            color: #007BFF; /* Change to your desired hover color */
+        }
+
+    </style>
+
+
+    </head>
+
+    <body>
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            ALZHEIMER'S
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="{{url_for('index')}}" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#algorithms">Algorithms</a></li>
+                            <li class="scroll-to-section"><a href="#upload">Upload</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+    <!-- ***** About Area Starts ***** -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h6 style="font-weight: bold;">About Project</h6>
+                            <h2 style="text-transform: uppercase;">About the Alzheimer's</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <img width="500px" height="300px" src="\static\assets\images\AD.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="right-text-content">
+                        <p>Alzheimer's disease is a progressive neurologic disorder that causes the brain to shrink (atrophy) and brain cells to die. Its  most common cause of dementia — a continuous decline in thinking, behavioral and social skills that affects a person's ability to function independently.
+                            <br>Brain cell connections and the cells themselves degenerate and die, eventually destroying memory and other important mental functions.Memory loss and confusion are the main symptoms.No cure exists, but medication and management strategies may temporarily improve symptoms.
+                            <br>Cognitive: mental decline, difficulty thinking and understanding, confusion in the evening hours, delusion, disorientation, forgetfulness, making things up, mental confusion, difficulty concentrating, inability to create new memories, inability to do simple maths, or inability to recognise common things.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** About Area Ends ***** -->
+
+
+    
+
+
+  <!-- ***** Algorithms Section Starts ***** -->
+<section class="section" id="algorithms">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                   <center><h2>Algorithms</h2></center> 
+                   <hr>  <br>
+            </div>
+            <div class="col-md-4">
+                <div class="algorithm">
+                    <h4>AlexNet</h4>
+                    <p>
+                        AlexNet, introduced by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, marked a pivotal moment in deep learning history when it won the ImageNet competition in 2012.
+                        This groundbreaking neural network architecture consists of eight layers, including five convolutional layers and three fully connected layers, with ReLU activation functions.
+                        AlexNet's innovative use of dropout and data augmentation techniques helped reduce overfitting and improve generalization. 
+                        It showcased the potential of deep learning in computer vision tasks and paved the way for the development of deeper and more powerful convolutional neural networks.                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="algorithm">
+                    <h4>MobileNet</h4>
+                    <p>
+                        MobileNet is a family of efficient neural network architectures specifically designed for mobile and embedded devices with limited computational resources.
+                         Developed by Google, MobileNet employs depth wise separable convolutions, a lightweight alternative to traditional convolutions, to reduce model size and computational demands while maintaining good accuracy.
+                          This makes it ideal for applications like real-time image recognition on smartphones and edge devices.
+                         MobileNet has different versions, such as MobileNetV1 and MobileNetV2, each offering varying trade-offs between model size, latency, and accuracy, catering to a wide range of deployment scenarios.                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="algorithm">
+                    <h3>VGG16</h3>
+                    <p>
+                        VGG16, short for Visual Geometry Group 16, is a deep convolutional neural network architecture that gained prominence during the ImageNet Large Scale Visual Recognition Challenge in 2014.
+                         Developed by the Visual Geometry Group at the University of Oxford, VGG16 is characterized by its simplicity and uniform architecture, consisting of 16 weight layers,
+                          primarily 3x3 convolutional layers, followed by max-pooling layers.
+                         Its straightforward design and impressive performance have made it a popular choice for various computer vision tasks, serving as a foundational model in the field of deep learning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>
+<!-- ***** Algorithms Section Ends ***** -->
+
+<!-- ***** Algorithms Section Ends ***** -->
+
+    <section class="section" id="upload">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title">
+                        <h2>Upload MRI Image</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="container-fluid" >
+                    <form  class="sbmt" id="contact" action="{{url_for('upload')}}" method="post" enctype="multipart/form-data">
+                            <input type="file" class="form-control" id="file" accept="image/*" required="" multiple name="file">
+                            <br>
+                            <select name="alg">
+                                <option value="-1">Choose Model</option>
+                                <option value="2">mobilenet</option>
+                                <option value="3">vgg</option>
+                                <option value="4">alexnet</option>
+                            </select>
+                            <br><br>
+                            <center><button type="submit" id="form-submit">Submit</button></center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Projects Area Ends ***** -->
+    <!-- ***** Footer Area Start ***** -->
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="left-text-content">
+                    <p>Thank you for visiting our website. If you have any questions or need further information, please feel free to contact us.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="right-text-content">
+                    <ul class="social-icons">
+                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="mailto:agentavery@sample.com?" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer
+>
+<!-- ***** Footer Area End ***** -->
+
+
+    <!-- jQuery -->
+    <script src="static/assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="static/assets/js/popper.js"></script>
+    <script src="static/assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="static/assets/js/owl-carousel.js"></script>
+    <script src="static/assets/js/scrollreveal.min.js"></script>
+    <script src="static/assets/js/waypoints.min.js"></script>
+    <script src="static/assets/js/jquery.counterup.min.js"></script>
+    <script src="static/assets/js/imgfix.min.js"></script>
+    <script src="static/assets/js/slick.js"></script>
+    <script src="static/assets/js/lightbox.js"></script>
+    <script src="static/assets/js/isotope.js"></script>
+
+    <!-- Global Init -->
+    <script src="static/assets/js/custom.js"></script>
+
+    <script>
+
+
+
+        </script>
+
+    </body>
+    </html>
